@@ -1,0 +1,37 @@
+:root{
+    --main-title-color: #212121;
+    --secondary-title-color: #ffffff;
+    --main-text-color: #757575;
+    --accent-color: #2196f3; 
+}
+
+body{
+    font-family:"Open Sans", sans-serif;
+}
+
+.list {
+    list-style: none;
+  }
+.link {
+    text-decoration: none;
+  }
+
+  /*Header*/
+  
+  .header-logo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+}
+
+.header-accent {
+    color:#000000;
+}
+
+.header-link {
+
+}
