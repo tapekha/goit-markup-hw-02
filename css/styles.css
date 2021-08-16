@@ -178,7 +178,7 @@ h1{
 
 .portfolio-btn:hover,
 .portfolio-btn:focus,{
-    color:#ffffff;
+    color: #ffffff;
     background-color: var(--accent-color);
 }
 
