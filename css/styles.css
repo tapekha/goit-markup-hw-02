@@ -1,99 +1,120 @@
-:root{
-    --main-title-color: #212121;
-    --secondary-title-color: #ffffff;
-    --main-text-color: #757575;
-    --accent-color: #2196f3; 
+:root {
+    --page-text: #212121;
+    --primary-text-color: #757575;
+    --secondary-text-color: #2196f3;
+    --third-text-color: #ffffff;
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #f5f4fa;
+  }
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--primary-background-color);
+    color: var(--page-text);
+    font-size: 16px;
+    font-style: normal;
+  }
+
+ /*header*/
+  
+  .header-logo {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color)
 }
 
-body{
-    font-family:"Open Sans", sans-serif;
+.header-accent {
+    color: #000000;
 }
 
 .list {
     list-style: none;
-  }
-.link {
     text-decoration: none;
-  }
-
-  /*header*/
-  
-  .header-logo {
-    font-family: Raleway;
     font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #2196f3;
-}
-
-.header-accent {
-    color:#000000;
-}
+  }
 
 .header-link {
+    color: var(--page-text);
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
 }
+
+.nav {
+    color: var(--secondary-text-color);
+  }
+  
 
 .header-link:hover,
 .header-link:focus {
-  color: var(--accent-color);
+    color: var(--secondary-text-color);
 }
 
-.header-email{
-    color:#757575;
+.nav-contacts{
+    color: var(--primary-text-color);
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-.header-tel{
-    color: #757575;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+.nav-contacts:hover,
+.nav-contacts:focus{
+    color: var(--secondary-text-color);
 }
+
 
   /*hero-section*/
-
-.hero-section{
-    background-color: #2f303a;;
-}
-
-h1{
-    color: var (--secondary-title-color);
-}
-
 .btn{
-    color: #ffffff;
-    background-color: var(--accent-color);
+    color: var(--third-text-color);
+    background-color: var(--secondary-text-color);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #188ce8;
 }
 
 /*abilities of the company*/
 
+.hidden {
+    display: none; /* hidden-simantic */
+  }
+
+.hero-title{
+    color: var(--third-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
 .ability-title{
+    color: var(--page-text);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-title-color);
 }
 
 .ability-text{
-    font-weight: 400;
+    color: var(--primary-text-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--main-text-color);
-
 }
 
 /*what company made*/
@@ -104,39 +125,37 @@ h1{
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-title-color);
 }
 /*members of the company*/
 
 .company-members{
-    background-color: #f5f4fa;
+    background-color: var(--secondary-background-color);
 }
 
 .members-title{
+    color: var(--page-text);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-title-color);
 }
 
 .mamber-name{
+    color: var(--page-text);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-title-color);
 }
 
 .skill{
-    font-weight: 400;
+    color: var(--primary-text-color);
     font-size: 16px;
-    line-height: 1.19;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-text-color);
 }
 
 /*footer*/
@@ -146,13 +165,10 @@ h1{
 }
 
 .footer-logo{
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    color: rgb(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #2196f3;
 }
 
 .footer-accent {
